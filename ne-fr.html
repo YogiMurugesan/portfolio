@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        
-        body, h1, h2, p, ul, li {
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
             margin: 0;
             padding: 0;
         }
-
+        
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: ghostwhite;
-            color:black;
+            color: black;
         }
-
+        
         header {
             background: #333;
             color: #fff;
             padding: 20px 0;
             text-align: center;
         }
-
+        
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-
+        
         header p {
             font-size: 1.2em;
         }
-
+        
         nav {
             background: #444;
             color: #fff;
             text-align: center;
             padding: 10px 0;
         }
-
+        
         nav ul {
             list-style: none;
         }
-
+        
         nav ul li {
             display: inline;
             margin: 0 15px;
         }
-
+        
         nav ul li a {
             color: #fff;
             text-decoration: none;
         }
-
+        
         nav ul li a:hover {
             text-decoration: underline;
         }
-
+        
         section {
             padding: 20px;
             margin: 20px auto;
@@ -68,24 +73,24 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
+        
         .hidden {
             display: none;
         }
-
+        
         .about-content {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 20px; 
+            gap: 20px;
         }
-
+        
         .image-container {
             text-align: center;
             margin: 0;
             flex: 1;
         }
-
+        
         .image-container img {
             height: 300px;
             width: 300px;
@@ -93,16 +98,16 @@
             font-size: 39px;
             padding: 3px;
         }
-
+        
         #certifications .certifications {
             margin-bottom: 20px;
         }
-
+        
         #skills ul {
             list-style-type: none;
             padding: 0;
         }
-
+        
         #skills ul li {
             background: #333;
             color: #fff;
@@ -112,7 +117,7 @@
             text-align: center;
             width: 200px;
         }
-
+        
         footer {
             background: #333;
             color: #fff;
@@ -121,28 +126,26 @@
             margin-top: 20px;
             font-size: 0.8em;
         }
-
         
         .white-icon {
             color: white;
             margin-right: 8px;
             font-size: 1.5em;
         }
-
+        
         .social-links a {
             color: white;
             text-decoration: none;
             font-size: 1.5em;
             margin: 0 10px;
         }
-
-       
+        
         .resume-link {
             display: block;
             text-align: center;
             margin: 20px 0;
         }
-
+        
         .resume-link a {
             background: #333;
             color: white;
@@ -151,38 +154,36 @@
             text-decoration: none;
             font-size: 1em;
         }
-
+        
         .resume-link a:hover {
             background: gray;
         }
-
-       
+        
         .education {
             margin-bottom: 20px;
         }
-
+        
         .education h3 {
             margin-bottom: 10px;
         }
-
+        
         .education p {
             margin-bottom: 5px;
         }
-
-    
+        
         .projects {
             margin-bottom: 20px;
         }
-
+        
         .projects h3 {
             margin-bottom: 10px;
         }
-
+        
         .projects ul {
             list-style-type: none;
             padding: 0;
         }
-
+        
         .projects ul li {
             background: #333;
             color: #fff;
@@ -190,21 +191,19 @@
             margin-bottom: 10px;
             border-radius: 5px;
         }
-
-       
+        
         .project-details {
             display: flex;
             align-items: center;
-            gap: 20px; 
+            gap: 20px;
         }
-
+        
         .project-image {
             height: 200px;
             width: 200px;
             border-radius: 5px;
             object-fit: cover;
         }
-
         
         .view-project-btn {
             display: inline-block;
@@ -216,29 +215,29 @@
             font-size: 0.8em;
             margin-top: 10px;
         }
-
+        
         .view-project-btn:hover {
             background: #555;
         }
-
-       
+        
         .contact-form {
             display: flex;
             flex-direction: column;
         }
-
+        
         .contact-form label {
             margin-bottom: 5px;
             font-weight: bold;
         }
-
-        .contact-form input, .contact-form textarea {
+        
+        .contact-form input,
+        .contact-form textarea {
             margin-bottom: 10px;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-
+        
         .contact-form button {
             background: #333;
             color: white;
@@ -248,34 +247,34 @@
             font-size: 1em;
             cursor: pointer;
         }
-
+        
         .contact-form button:hover {
             background: #555;
         }
-
         
         .success-message {
             margin-top: 10px;
             color: green;
             font-weight: bold;
         }
+        
         .contact-info {
-        margin-top: 20px;
-        font-size: 1.2em;
+            margin-top: 20px;
+            font-size: 1.2em;
         }
-
+        
         .contact-info p {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
         }
-
+        
         .contact-info i {
             margin-right: 10px;
         }
-
     </style>
 </head>
+
 <body>
     <header>
         <h1>YOGESWARI.M</h1>
@@ -295,7 +294,7 @@
             <a href="https://www.codechef.com/users/yogeswari1805" target="_blank">
                 CodeChef
             </a>
-            
+
             <a href="https://www.stopstalk.com/user/profile/Yogeswari" target="_blank">
                 Stopstalk
             </a>
@@ -320,9 +319,10 @@
                 <img src="yo-pho.jpeg" alt="Yogeswari.M" />
             </div>
             <div>
-                <p>Hello! I'm Yogeswari.M, a dedicated student currently pursuing my studies at Kalaignar Karunanidhi Institute of Technology. I have a strong passion for learning and exploring various fields, with a particular interest in technology and problem-solving. My academic journey is centered on acquiring new knowledge, developing skills, and preparing for future challenges.</p>
+                <p>Hello! I'm Yogeswari.M, a dedicated student currently pursuing my studies at Kalaignar Karunanidhi Institute of Technology. I have a strong passion for learning and exploring various fields, with a particular interest in technology and
+                    problem-solving. My academic journey is centered on acquiring new knowledge, developing skills, and preparing for future challenges.</p>
                 <div class="resume-link">
-                    <a href="resume_yogi.pdf" >VIEW CV</a>
+                    <a href="resume_yogi.pdf">VIEW CV</a>
                 </div>
             </div>
         </div>
@@ -352,104 +352,168 @@
         <div class="certifications">
             <h3>Internship</h3>
             <ul>
-            <li><p>I had Successfully completed my Internship at ONGC. from 18.04.2024 to 02.05.2024</p></li>
-            <li><p>I had Successfully completed my Internship in Web Development Using Python at LIVEWIRE. from 01.07.2024 to 15.07.2024</p></li>
-        </ul>
+                <li>
+                    <p>I had Successfully completed my Internship at ONGC. from 18.04.2024 to 02.05.2024</p>
+                </li>
+                <li>
+                    <p>I had Successfully completed my Internship in Web Development Using Python at LIVEWIRE. from 01.07.2024 to 15.07.2024</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>Inplant training</h3>
             <ul>
-            <li><p>Database Management System at Code Binds Technology. from 02.08.2023 to 05.08.2023 </p></li>
-            <li><p>Successfully Undertook in-plant training in Web development  at Litz Technology. from 10.02.2024 to 17.02.2024</p></li>
-        </ul>
+                <li>
+                    <p>Database Management System at Code Binds Technology. from 02.08.2023 to 05.08.2023 </p>
+                </li>
+                <li>
+                    <p>Successfully Undertook in-plant training in Web development at Litz Technology. from 10.02.2024 to 17.02.2024</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>Infosys Springboard</h3>
-        <ul>
-            <li><p>Python Foundation Certificate</p></li>
-                <li><p>Internet of things Foundation Certification</p></li>
-                    <li><p>TechA Python Programming Foundation Certification</p></li>
-                        <li> <p>TechA Web Development using HTML and CSS Foundation Certification</p></li>
-                            <li><p>TechA Python Programming Foundation Certification</p></li>
-                                <li> <p>Associate in IT Foundation Skils(Python)</p></li>
-                                    <li><p>Microsoft IIS Extension&anmp Certificate</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Python Foundation Certificate</p>
+                </li>
+                <li>
+                    <p>Internet of things Foundation Certification</p>
+                </li>
+                <li>
+                    <p>TechA Python Programming Foundation Certification</p>
+                </li>
+                <li>
+                    <p>TechA Web Development using HTML and CSS Foundation Certification</p>
+                </li>
+                <li>
+                    <p>TechA Python Programming Foundation Certification</p>
+                </li>
+                <li>
+                    <p>Associate in IT Foundation Skils(Python)</p>
+                </li>
+                <li>
+                    <p>Microsoft IIS Extension&anmp Certificate</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>TANCAM</h3>
-        <ul>
-                <li><p>Harkaton for Women in Engineering-TANCAM</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Harkaton for Women in Engineering-TANCAM</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>Technical symposiyam</h3>
-        <ul>
-                <li><p>National Level technical Symposium - 3rd place - Project Expo</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>National Level technical Symposium - 3rd place - Project Expo</p>
+                </li>
+            </ul>
         </div>
-        
+
         <div class="certifications">
             <h3>Coursera</h3>
-        <ul>
-                <li><p>Exploratory Data Analysis For Machine Learning-IBM</p></li>
-                    <li><p>Crash course on Python-Google</p></li>
-                    <li><p>Embeded C Programming Essentials</p></li>
-                        <li><p>DevOps,DataOps,MLOps-Duke</p></li>
-                            <li><p>preparing for your Professional Cloud Architect Journey</p></li>
-                                <li><p>Intermediate Relational Database and SQL - Coursera Project network</p></li>
-                                    <li><p>Advanced Relational Database and SQL - Coursera Project network</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Exploratory Data Analysis For Machine Learning-IBM</p>
+                </li>
+                <li>
+                    <p>Crash course on Python-Google</p>
+                </li>
+                <li>
+                    <p>Embeded C Programming Essentials</p>
+                </li>
+                <li>
+                    <p>DevOps,DataOps,MLOps-Duke</p>
+                </li>
+                <li>
+                    <p>preparing for your Professional Cloud Architect Journey</p>
+                </li>
+                <li>
+                    <p>Intermediate Relational Database and SQL - Coursera Project network</p>
+                </li>
+                <li>
+                    <p>Advanced Relational Database and SQL - Coursera Project network</p>
+                </li>
+            </ul>
         </div>
-        
-        
+
+
         <div class="certifications">
             <h3>Digilabs</h3>
-        <ul>
-                <li><p>HTML Basic Level Up program, Duration 1 Month</p></li>
-                    <li><p>Python Basic certificate of Participating Level Up program</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>HTML Basic Level Up program, Duration 1 Month</p>
+                </li>
+                <li>
+                    <p>Python Basic certificate of Participating Level Up program</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>Altair</h3>
-        <ul>
-                <li><p>Knowledge Studio Basics Certification</p></li>
-                    <li><p>Data Modeling With Knowledge Studio Intermediate Examination</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Knowledge Studio Basics Certification</p>
+                </li>
+                <li>
+                    <p>Data Modeling With Knowledge Studio Intermediate Examination</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>Guvi</h3>
-        <ul>
-                <li><p>Achivement-AI for Women</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Achivement-AI for Women</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>Pantech E Learning</h3>
-        <ul>
-                <li><p>30 Days Masterclass on Machine Learning</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>30 Days Masterclass on Machine Learning</p>
+                </li>
+            </ul>
         </div>
         <div class="certifications">
             <h3>Great Learning</h3>
-        <ul>
-                <li><p>Front End Development-HTML</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Front End Development-HTML</p>
+                </li>
+            </ul>
         </div>
-        
+
         <div class="certifications">
             <h3>WorkShop</h3>
-        <ul>
-                <li><p>Natural Language Processing With TensorFlow </p></li>
-                <li><p>Design Thinking and Innovative Design concepts </p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Natural Language Processing With TensorFlow </p>
+                </li>
+                <li>
+                    <p>Design Thinking and Innovative Design concepts </p>
+                </li>
+            </ul>
         </div>
 
         <div class="certifications">
             <h3>Celonis Academy</h3>
-        <ul>
-                <li><p>Deliver Business Value With Celonis</p></li>
-                <li><p>Academic Process Mining Fundamentals</p></li>
-                <li><p>Create and Deliver Demos</p></li>
-        </ul>
+            <ul>
+                <li>
+                    <p>Deliver Business Value With Celonis</p>
+                </li>
+                <li>
+                    <p>Academic Process Mining Fundamentals</p>
+                </li>
+                <li>
+                    <p>Create and Deliver Demos</p>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -474,38 +538,54 @@
     <section id="projects" class="hidden">
         <h2>Projects</h2>
         <div class="projects"></div>
-            <h3>WebPage For - 7.5% Reservation</h3>
-            <div class="project-details">
-                <img src="mbbs2.png" alt="doctor" class="project-image"/>
-                <div class="project-description">
-                    <p>
-                        This project is designed to support students eligible for the 7.5% reservation in Tamil Nadu by providing a comprehensive platform that lists both government and private colleges, and  seat availability across all categories.and Cut-Off Mark&Ranks. It also offers a directory of NEET coaching centers, complete with links to their official websites, ensuring students have easy access to essential educational resources.
-                    </p>
-                    <a href="https://yogimurugesan.github.io/7.5-Reservation/frnt.html" target="_blank" class="view-project-btn">View Project</a>
-                </div>
+        <h3>WebPage For - 7.5% Reservation</h3>
+        <div class="project-details">
+            <img src="mbbs2.png" alt="doctor" class="project-image" />
+            <div class="project-description">
+                <p>
+                    This project is designed to support students eligible for the 7.5% reservation in Tamil Nadu by providing a comprehensive platform that lists both government and private colleges, and seat availability across all categories.and Cut-Off Mark&Ranks. It
+                    also offers a directory of NEET coaching centers, complete with links to their official websites, ensuring students have easy access to essential educational resources.
+                </p>
+                <a href="https://yogimurugesan.github.io/7.5-Reservation/frnt.html" target="_blank" class="view-project-btn">View Project</a>
             </div>
+        </div>
         </div>
 
         <div class="projects"></div>
         <h3>WebPage For Hostel Booking - FullStack</h3>
         <div class="project-details">
-            <img src="hostel.png" alt="doctor" class="project-image"/>
+            <img src="hostel.png" alt="doctor" class="project-image" />
             <div class="project-description">
-                <p>This full-stack hostel booking system, developed for my college, simplifies the booking process with a user-friendly interface. The system includes three main sections: an account creation and login page, a booking access page, and a detailed booking page to finalize hostel reservations. Designed with ease of use in mind, this project offers an efficient registration and booking experience tailored to students’ needs.
+                <p>This full-stack hostel booking system, developed for my college, simplifies the booking process with a user-friendly interface. The system includes three main sections: an account creation and login page, a booking access page, and a detailed
+                    booking page to finalize hostel reservations. Designed with ease of use in mind, this project offers an efficient registration and booking experience tailored to students’ needs.
                 </p>
                 <a href="https://appsail-50022665360.development.catalystappsail.in" target="_blank" class="view-project-btn">View Project</a>
             </div>
         </div>
-    </div>
+        </div>
 
+        <div class="projects">
+            <h3>YouTube - Clone</h3>
+            <div class="project-details">
+                <img src="govt.png" alt="Govt exam" class="project-image" />
+                <div class="project-description">
+                    <p>
+                        This project involved comprehensive platform that provides detailed information on various government exams. The portal includes official website links, exam-specific details, and additional resources to assist users in their preparation. I also implemented
+                        several innovative features to enhance the user experience and make the platform more informative and accessible.
+                    </p>
+                    <a href="https://yogimurugesan.github.io/govt/frnt.html" target="_blank" class="view-project-btn">View Project</a>
+                </div>
+            </div>
+        </div>
 
         <div class="projects">
             <h3>WebPage for Government Exams</h3>
             <div class="project-details">
-                <img src="govt.png" alt="Govt exam" class="project-image"/>
+                <img src="govt.png" alt="Govt exam" class="project-image" />
                 <div class="project-description">
                     <p>
-                        This project involved  comprehensive platform that provides detailed information on various government exams. The portal includes official website links, exam-specific details, and additional resources to assist users in their preparation. I also implemented several innovative features to enhance the user experience and make the platform more informative and accessible.
+                        This project involved comprehensive platform that provides detailed information on various government exams. The portal includes official website links, exam-specific details, and additional resources to assist users in their preparation. I also implemented
+                        several innovative features to enhance the user experience and make the platform more informative and accessible.
                     </p>
                     <a href="https://yogimurugesan.github.io/govt/frnt.html" target="_blank" class="view-project-btn">View Project</a>
                 </div>
@@ -514,37 +594,41 @@
         <div class="projects">
             <h3>Blood Cancer Prediction Using The Lime Algorithm In Explainable AI </h3>
             <div class="project-details">
-                <img src="blood-c.png" alt="colab" class="project-image"/>
+                <img src="blood-c.png" alt="colab" class="project-image" />
                 <div class="project-description">
                     <p>
-                        This project focuses on predicting blood cancer using the LIME algorithm within the framework of explainable AI. The model analyzes key blood parameters, including WBC, RBC, platelet count, and hemoglobin levels, to predict cancer type and stage. Additionally, it provides clear, interpretable explanations for each prediction, enhancing transparency and trust in the results.
+                        This project focuses on predicting blood cancer using the LIME algorithm within the framework of explainable AI. The model analyzes key blood parameters, including WBC, RBC, platelet count, and hemoglobin levels, to predict cancer type and stage. Additionally,
+                        it provides clear, interpretable explanations for each prediction, enhancing transparency and trust in the results.
                     </p>
                     <a href="https://github.com/YogiMurugesan/blood-cancer-XAI/blob/main/blood_cancer.ipynb" target="_blank" class="view-project-btn">View Project</a>
                 </div>
             </div>
         </div>
-        
+
         <div class="projects">
             <h3>WebPage For Car ShowRoom</h3>
             <div class="project-details">
-                <img src="car-show.png" alt="car showroom" class="project-image"/>
+                <img src="car-show.png" alt="car showroom" class="project-image" />
                 <div class="project-description">
                     <p>
-                        This project involved developing a comprehensive virtual car showroom website that showcases various car brands and models available at the dealership. The site offers detailed car specifications, pricing, and customization options, along with additional features like a service center and user account management
+                        This project involved developing a comprehensive virtual car showroom website that showcases various car brands and models available at the dealership. The site offers detailed car specifications, pricing, and customization options, along with additional
+                        features like a service center and user account management
                     </p>
                     <a href="https://yogimurugesan.github.io/carshowroom/frnt.html" target="_blank" class="view-project-btn">View Project</a>
                 </div>
             </div>
         </div>
 
-        
+
         <div class="projects">
             <h3>Eye Power Prediction Using The Lime Algorithm In Explainable AI </h3>
             <div class="project-details">
-                <img src="eye-gr.png" alt="colab" class="project-image"/>
+                <img src="eye-gr.png" alt="colab" class="project-image" />
                 <div class="project-description">
                     <p>
-                        This project explores the application of the LIME (Local Interpretable Model-agnostic Explanations) algorithm, a prominent XAI technique, in predicting eye power. LIME enhances the interpretability of Al models by providing explanations for individual predictions, making it easier for clinicians to understand and trust the Al's recommendations. We delve into the methodology of applying LIME to eye power prediction models, highlighting how this approach can improve clinical decision-making and patient outcomes.
+                        This project explores the application of the LIME (Local Interpretable Model-agnostic Explanations) algorithm, a prominent XAI technique, in predicting eye power. LIME enhances the interpretability of Al models by providing explanations for individual
+                        predictions, making it easier for clinicians to understand and trust the Al's recommendations. We delve into the methodology of applying LIME to eye power prediction models, highlighting how this approach can improve clinical decision-making
+                        and patient outcomes.
                     </p>
                     <a href="https://github.com/YogiMurugesan/eye_power/blob/main/yogi_mini.ipynb" target="_blank" class="view-project-btn">View Project</a>
                 </div>
@@ -553,10 +637,11 @@
         <div class="projects">
             <h3>Portfolio</h3>
             <div class="project-details">
-                <img src="port-img.png" alt="Portfolio" class="project-image"/>
+                <img src="port-img.png" alt="Portfolio" class="project-image" />
                 <div class="project-description">
                     <p>
-                        Explore my portfolio to see a selection of projects I've worked on. From dynamic web applications to interactive websites, each project showcases my skills in web development and problem-solving. I strive to create efficient, user-friendly solutions that meet real-world needs.</p>
+                        Explore my portfolio to see a selection of projects I've worked on. From dynamic web applications to interactive websites, each project showcases my skills in web development and problem-solving. I strive to create efficient, user-friendly solutions that
+                        meet real-world needs.</p>
                     <a href="https://yogimurugesan.github.io/portfolio/ne-fr.html" target="_blank" class="view-project-btn">View Project</a>
                 </div>
             </div>
@@ -564,12 +649,14 @@
         <div class="projects">
             <h3>AI Powered Medical Waste Segregator</h3>
             <div class="project-details">
-                <img src="medical_waste.png" alt="wastewater" class="project-image"/>
+                <img src="medical_waste.png" alt="wastewater" class="project-image" />
                 <div class="project-description">
                     <p>
-                        This project showcases an automated medical waste segregation system that combines machine learning, computer vision, and robotics to efficiently sort medical waste. Using a conveyor belt and a camera, the system captures real-time images of waste items, which are then classified into five categories by a Convolutional Neural Network (CNN) trained on a large dataset. The system employs image processing to create bounding boxes around the detected waste, and the coordinates are converted into G-code, guiding a robotic arm to pick up and place the waste into the correct bin. This solution reduces manual labor, enhances accuracy, and promotes safer, more efficient waste management in healthcare environments.
+                        This project showcases an automated medical waste segregation system that combines machine learning, computer vision, and robotics to efficiently sort medical waste. Using a conveyor belt and a camera, the system captures real-time images of waste items,
+                        which are then classified into five categories by a Convolutional Neural Network (CNN) trained on a large dataset. The system employs image processing to create bounding boxes around the detected waste, and the coordinates are
+                        converted into G-code, guiding a robotic arm to pick up and place the waste into the correct bin. This solution reduces manual labor, enhances accuracy, and promotes safer, more efficient waste management in healthcare environments.
                     </p>
-                        
+
                     <a href="medi_waste.mp4" target="_blank" class="view-project-btn">View Project</a>
                 </div>
             </div>
@@ -581,21 +668,21 @@
         <form class="contact-form" id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            
+
             <button type="submit">Send Message</button>
             <p id="successMessage" class="success-message hidden">Message sent successfully!</p>
         </form>
-	<div class="contact-info">
-        <p><i class="fa-solid fa-phone white-icon"></i>8667024320</p>
-        <p><i class="fa-solid fa-location-dot white-icon"></i>Nagapattinam,Tamil Nadu</p>
-        <p><i class="fa-solid fa-envelope white-icon"></i>yogeswari1805@gmail.com</p>
-    </div>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-phone white-icon"></i>8667024320</p>
+            <p><i class="fa-solid fa-location-dot white-icon"></i>Nagapattinam,Tamil Nadu</p>
+            <p><i class="fa-solid fa-envelope white-icon"></i>yogeswari1805@gmail.com</p>
+        </div>
     </section>
 
     <footer>
@@ -604,30 +691,31 @@
 
     <script>
         function showSection(sectionId) {
-          
+
             const sections = document.querySelectorAll('section');
             sections.forEach(section => {
                 section.classList.add('hidden');
             });
 
-            
+
             const selectedSection = document.getElementById(sectionId);
             selectedSection.classList.remove('hidden');
         }
 
-   
+
         window.onload = function() {
             showSection('about');
         };
 
         document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            
-            
+            event.preventDefault();
+
+
             document.getElementById('successMessage').classList.remove('hidden');
-            
+
             this.reset();
         });
     </script>
 </body>
+
 </html>
